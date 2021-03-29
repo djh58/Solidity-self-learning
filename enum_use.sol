@@ -2,8 +2,7 @@
 pragma solidity ^0.7.6;
 
 import "./enum_decl.sol";
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.7.6;
+
 
 contract Enum {
    
