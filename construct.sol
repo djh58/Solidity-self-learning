@@ -49,7 +49,7 @@ contract E is X, Y {
 // 1. Y
 // 2. X
 // 3. E
-contract E is X, Y {
+contract F is X, Y {
     constructor() Y("Y was called") X("X was called") {
     }
 }
