@@ -32,7 +32,7 @@ contract FunctionModifier {
 
     function changeOwner(address _newOwner)
         public
-        onlyOwner
+        onlyOwner()
         validAddress(_newOwner)
     {
         owner = _newOwner;
@@ -49,7 +49,7 @@ contract FunctionModifier {
         locked = false;
     }
 
-    function decrement(uint i) public noReentrancy {
+    function decrement(uint i) public noReentrancy() {
         x -= i;
 
         if (i > 1) {
